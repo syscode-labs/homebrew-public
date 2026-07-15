@@ -6,3 +6,7 @@ assets.
 ```bash
 brew install --cask syscode-labs/public/omni-on-unraid
 ```
+
+```bash
+brew install syscode-labs/public/quickserve
+```
