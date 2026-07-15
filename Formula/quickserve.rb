@@ -1,30 +1,30 @@
 class Quickserve < Formula
   desc "Tiny HTTP directory server with LAN, UPnP, and Cloudflare Tunnel support"
   homepage "https://github.com/syscode-labs/quickserve"
-  version "0.1.10"
+  version "0.1.11"
   license "CC0-1.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.10/quickserve_v0.1.10_darwin_arm64.tar.gz"
-      sha256 "2ca2825062b5105108d8e7fb2b1d0c87c010d4f26723189b69536430862f7798"
+      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.11/quickserve_v0.1.11_darwin_arm64.tar.gz"
+      sha256 "4ce334440ae53d7005b207b7a7bad004d9eb0f812d0ed7ace54c16bce6dcbefa"
     end
 
     on_intel do
-      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.10/quickserve_v0.1.10_darwin_amd64.tar.gz"
-      sha256 "4bf5ca43c86fcffd0b82359474486ceb4e2a0b00a73983342177f96bb1f69a40"
+      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.11/quickserve_v0.1.11_darwin_amd64.tar.gz"
+      sha256 "6ecc1846c1060cf94ca60bfb9a802a761fb172b61b2b4b13785930c53d19e480"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.10/quickserve_v0.1.10_linux_arm64.tar.gz"
-      sha256 "795933093ea409c334a0684d0a88b798e6340acb8b2c69273034c5dfcae89013"
+      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.11/quickserve_v0.1.11_linux_arm64.tar.gz"
+      sha256 "b05d6446dc9c3d59ca5b1f5279f1cd4398b4f4ee1f30e16d75f0855a08988253"
     end
 
     on_intel do
-      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.10/quickserve_v0.1.10_linux_amd64.tar.gz"
-      sha256 "4f8ce39c93657a5c9f939e23c1b8e457dfd7df9badeda26e175b3e095aedc0f7"
+      url "https://github.com/syscode-labs/quickserve/releases/download/v0.1.11/quickserve_v0.1.11_linux_amd64.tar.gz"
+      sha256 "bb39ff6c4170e8137b0f8a3c57328b81c260f7da30f0a6464b5b78c967d5a519"
     end
   end
 
