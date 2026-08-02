@@ -1,32 +1,33 @@
-cask "bpm-tray" do
-  version "0.3.1"
+cask "bpm" do
+  version "0.3.3"
 
   on_macos do
     on_arm do
       url "https://github.com/syscode-labs/bambu-profile-manager/releases/download/v#{version}/BpmTray_v#{version}_darwin_arm64.zip"
-      sha256 "24629f65d2b44a0d117fc023ff4b7cb432b8e6709b194f60bd25858f72dce4b1"
+      sha256 "f4f03745316f392bbe0a7594b612efd6e31af93350413f7c10ef958cae75cd13"
     end
 
     on_intel do
       url "https://github.com/syscode-labs/bambu-profile-manager/releases/download/v#{version}/BpmTray_v#{version}_darwin_amd64.zip"
-      sha256 "6b728d9673d894bab7ea39997671da3070b95403a869e73f3ea3c46a29e5e0a8"
+      sha256 "22221f62c3a109c3145c3f2c0480e4a196eb89e2ea5c67d03f80e5f21c16febd"
     end
   end
 
-  name "Bpm Tray"
-  desc "macOS menu bar app for Bambu Profile Manager"
+  name "Bambu Profile Manager"
+  desc "Copy Bambu Studio filament/process profiles across printers and verify the round trip - CLI + menu bar app"
   homepage "https://github.com/syscode-labs/bambu-profile-manager"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  app "BpmTray.app"
+  app "Bambu Profile Manager.app"
+  binary "#{appdir}/Bambu Profile Manager.app/Contents/MacOS/bpm"
 
   # Unsigned/unnotarized (no Apple Developer cert) - without this, Gatekeeper
   # blocks the app with "unidentified developer" the first time you open it.
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/BpmTray.app"]
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Bambu Profile Manager.app"]
   end
 
   zap trash: [
