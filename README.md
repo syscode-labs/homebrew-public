@@ -10,3 +10,7 @@ brew install --cask syscode-labs/public/omni-on-unraid
 ```bash
 brew install syscode-labs/public/quickserve
 ```
+
+```bash
+brew install syscode-labs/public/bpm
+```
